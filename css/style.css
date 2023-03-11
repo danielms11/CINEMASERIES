@@ -1,0 +1,107 @@
+/*Móvil*/
+/*Para toda la página*/
+
+.inputSearchYText:hover {
+    box-shadow: 0px 0px 5px 5px #53FBDB;
+}
+
+.botones {
+    background-color: #002637;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.botones:hover {
+    border: 1px solid #53FBDB;
+    color: #53FBDB;
+}
+
+/*Header y todo lo que hay dentro de la etiqueta*/
+
+header {
+    background-color: #002637;
+    text-align: center;
+}
+
+#logo-cinemaseries {
+    width: 145px;
+    height: 154px;
+}
+
+/*Nav y todo lo que hay dentro de la etiqueta*/
+
+nav {
+    background-color: #002637;
+}
+
+#menuLinks>li>a {
+    color: white;
+}
+
+#menuLinks>li>a:hover {
+    color: #53FBDB;
+}
+
+/*Section y todo lo que hay dentro de la etiqueta*/
+
+section {
+    background-color: #1f3742;
+}
+
+.imagenesCarousel {
+    width: 375px;
+    height: 211px;
+}
+
+article {
+    background-color: white;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.contenidoArticle>h1>a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenidoArticle>p>a {
+    text-decoration: none;
+}
+
+/*Footer y todo lo que hay dentro de la etiqueta*/
+
+footer {
+    text-align: center;
+}
+
+/*Ordenador*/
+
+@media screen and (min-width: 992px) {
+
+    /*Header y todo lo que hay dentro de la etiqueta*/
+
+    #logo-cinemaseries {
+        width: 195px;
+        height: 204px;
+    }
+
+    /*Section y todo lo que hay dentro de la etiqueta*/
+
+    .imagenesCarousel {
+        width: 1200px;
+        height: 675px;
+    }
+
+    article {
+        margin-left: 117px;
+        margin-right: 117px;
+    }
+
+    /*Footer y todo lo que hay dentro de la etiqueta*/
+
+    footer {
+        padding: 20px;
+    }
+}
