@@ -1,6 +1,10 @@
 /*Móvil*/
 /*Para toda la página*/
 
+.aNone>a {
+    text-decoration: none;
+}
+
 .inputSearchYText:hover {
     box-shadow: 0px 0px 5px 5px #53FBDB;
 }
@@ -76,6 +80,49 @@ footer {
     text-align: center;
 }
 
+/* Estilos para los formularios*/
+
+.formularios {
+    background-color: #1f3742;
+    color: white;
+}
+
+.formulario {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formularioStyle {
+    background-color: #002637;
+    border-radius: 5px 5px 5px 5px;
+    padding: 50px;
+    border: 1px solid white;
+}
+
+.formularioStyleCrearCuenta {
+    background-color: #002637;
+    border-radius: 5px 5px 5px 5px;
+    padding: 50px;
+    border: 1px solid white;
+}
+
+/*Estilos para las cartas*/
+
+.carta {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.imagenCarta {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
 /*Ordenador*/
 
 @media screen and (min-width: 992px) {
@@ -98,10 +145,20 @@ footer {
         margin-left: 117px;
         margin-right: 117px;
     }
-
+    
     /*Footer y todo lo que hay dentro de la etiqueta*/
 
     footer {
         padding: 20px;
+    }
+
+    /* Estilos para los formularios*/
+
+    .formularioStyle {
+        padding: 100px;
+    }
+
+    .formularioStyleCrearCuenta {
+        padding: 70px;
     }
 }
