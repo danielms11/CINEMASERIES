@@ -1,6 +1,11 @@
 /*Móvil*/
 /*Para toda la página*/
 
+.videos {
+    width: 375px;
+    height: 211px;
+}
+
 .aNone>a {
     text-decoration: none;
 }
@@ -52,6 +57,10 @@ nav {
 
 section {
     background-color: #1f3742;
+}
+
+.imagenes {
+    text-align: center;
 }
 
 .imagenesCarousel {
@@ -110,22 +119,65 @@ footer {
 
 /*Estilos para las cartas*/
 
-.carta {
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
 .imagenCarta {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
+.flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    border-radius: 50%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 50%;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.flip-card-front {
+    color: black;
+    border-radius: 50%;
+}
+
+.flip-card-back {
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+}
+
 /*Ordenador*/
 
 @media screen and (min-width: 992px) {
+
+    .videos {
+        width: 1000px;
+        height: 475px;
+    }
 
     /*Header y todo lo que hay dentro de la etiqueta*/
 
@@ -145,7 +197,7 @@ footer {
         margin-left: 117px;
         margin-right: 117px;
     }
-    
+
     /*Footer y todo lo que hay dentro de la etiqueta*/
 
     footer {
@@ -160,5 +212,13 @@ footer {
 
     .formularioStyleCrearCuenta {
         padding: 70px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    article {
+        margin-left: 269px;
+        margin-right: 269px;
     }
 }
