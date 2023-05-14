@@ -215,10 +215,12 @@ footer {
     }
 }
 
-@media screen and (max-width: 992px) {
-
-    article {
+@media screen and (min-width: 1024px) {
+  article {
         margin-left: 500px;
         margin-right: 500px;
     }
 }
+
+    
+
